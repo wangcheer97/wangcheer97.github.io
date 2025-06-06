@@ -2,72 +2,72 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Agenda on My New Hugo Site</title>
-    <link>https://example.org/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Agenda on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://example.org/bio/</link>
+      <link>http://localhost:1313/bio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/bio/</guid>
+      <guid>http://localhost:1313/bio/</guid>
       <description>Yuchen Wang&#xD;Laboratory of Statistics and Geoinformation&#xA;Department of Statistics&#xA;Federal University of Paraná&#xA;&#34;Those who know, do. Those that understand, teach.&#34;&#xD;― Aristotle&#xD;Welcome!&#xD;I am associate professor at Department of&#xD;Statistics at Federal University of Paraná (UFPR, 2010 -&#xD;today). I lecture Computational Statistics regularly at Bachelor in&#xD;Statistics and several topics at Data Science &amp; Big Data&#xD;Specialization. I also teach Elementary Statistics and&#xD;Applied Statistics, related to the data analysis, frequently.</description>
     </item>
     <item>
       <title>Academical mentoring</title>
-      <link>https://example.org/mentoring/</link>
+      <link>http://localhost:1313/mentoring/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/mentoring/</guid>
+      <guid>http://localhost:1313/mentoring/</guid>
       <description></description>
     </item>
     <item>
       <title>Conferences</title>
-      <link>https://example.org/conferences/</link>
+      <link>http://localhost:1313/conferences/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/conferences/</guid>
+      <guid>http://localhost:1313/conferences/</guid>
       <description></description>
     </item>
     <item>
       <title>Courses</title>
-      <link>https://example.org/courses/</link>
+      <link>http://localhost:1313/courses/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/courses/</guid>
+      <guid>http://localhost:1313/courses/</guid>
       <description></description>
     </item>
     <item>
       <title>Estatística · Ensino Remoto Emergêncial</title>
-      <link>https://example.org/ere/</link>
+      <link>http://localhost:1313/ere/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/ere/</guid>
+      <guid>http://localhost:1313/ere/</guid>
       <description></description>
     </item>
     <item>
       <title>Events</title>
-      <link>https://example.org/events/</link>
+      <link>http://localhost:1313/events/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/events/</guid>
+      <guid>http://localhost:1313/events/</guid>
       <description></description>
     </item>
     <item>
       <title>Projects</title>
-      <link>https://example.org/projects/</link>
+      <link>http://localhost:1313/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/projects/</guid>
+      <guid>http://localhost:1313/projects/</guid>
       <description></description>
     </item>
     <item>
       <title>Short Courses</title>
-      <link>https://example.org/shortcourses/</link>
+      <link>http://localhost:1313/shortcourses/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/shortcourses/</guid>
+      <guid>http://localhost:1313/shortcourses/</guid>
       <description></description>
     </item>
     <item>
       <title>Vídeos</title>
-      <link>https://example.org/videos/</link>
+      <link>http://localhost:1313/videos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/videos/</guid>
+      <guid>http://localhost:1313/videos/</guid>
       <description></description>
     </item>
   </channel>
