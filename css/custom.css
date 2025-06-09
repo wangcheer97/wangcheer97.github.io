@@ -136,6 +136,7 @@ table.skills tr:hover {
 
 .ul-interests, .ul-edu {
     text-align: left;
+    line-height: 130%;
 }
 
 .box {
@@ -261,7 +262,7 @@ div.image + h3 {
 }
 
 div.social {
-    margin-bottom: 1.5em;
+    margin-bottom: 0em;
 }
 
 li > ul, li > ol {
