@@ -9,10 +9,17 @@
     <atom:link href="https://wangcheer97.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://wangcheer97.github.io/backup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://wangcheer97.github.io/backup/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>https://wangcheer97.github.io/bio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wangcheer97.github.io/bio/</guid>
-      <description>Yuchen Wang&#xD;Ph.D. Student&#xA;Urban Planner &amp; Data Analyst&#xA;Texas A&amp;M University&#xA;&#34;Man is something that shall be overcome.&#34;&#xD;― Friedrich Nietzsche&#xD;Welcome!&#xD;I am associate professor at Department of&#xD;Statistics at Federal University of Paraná (UFPR, 2010 -&#xD;today). I lecture Computational Statistics regularly at Bachelor in&#xD;Statistics and several topics at Data Science &amp; Big Data&#xD;Specialization. I also teach Elementary Statistics and&#xD;Applied Statistics, related to the data analysis, frequently.</description>
+      <description>Yuchen Wang&#xD;yuchen-wang@tamu.edu&#xA;Ph.D. Student&#xA;Texas A&amp;M University&#xA;Urban Planner &amp; Data Analyst&#xA;&#34;Man is something that shall be overcome.&#34;&#xD;― Friedrich Nietzsche&#xD;Welcome!&#xD;This is Yuchen Wang (王雨晨). I am a PhD student in the Urban &amp; Regional Sciences PhD program at Texas A&amp;M University (TAMU), advised by Prof. Xinyue Ye (叶信岳).&#xD;Prior to this, I got my bachelor’s and master’s degrees in urban and rural planning at Huazhong University of Science and Technology (HUST), advised by Prof.</description>
     </item>
     <item>
       <title>Academical mentoring</title>

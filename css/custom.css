@@ -8,6 +8,8 @@ body {
     font-family: 'Fira Sans', sans-serif;
 }
 
+html { scroll-behavior: smooth; }
+
 div#refs div p {
     text-indent: -1.25em !important;
     /* text-indent: -1em */
