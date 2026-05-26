@@ -2,29 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://wangcheer97.github.io/backup/</loc>
-  </url><url>
     <loc>https://wangcheer97.github.io/bio/</loc>
   </url><url>
-    <loc>https://wangcheer97.github.io/mentoring/</loc>
+    <loc>https://wangcheer97.github.io/activities/</loc>
+  </url><url>
+    <loc>https://wangcheer97.github.io/awards/</loc>
   </url><url>
     <loc>https://wangcheer97.github.io/categories/</loc>
   </url><url>
-    <loc>https://wangcheer97.github.io/conferences/</loc>
+    <loc>https://wangcheer97.github.io/experience/</loc>
   </url><url>
-    <loc>https://wangcheer97.github.io/courses/</loc>
-  </url><url>
-    <loc>https://wangcheer97.github.io/ere/</loc>
-  </url><url>
-    <loc>https://wangcheer97.github.io/events/</loc>
-  </url><url>
-    <loc>https://wangcheer97.github.io/projects/</loc>
-  </url><url>
-    <loc>https://wangcheer97.github.io/shortcourses/</loc>
+    <loc>https://wangcheer97.github.io/publications/</loc>
   </url><url>
     <loc>https://wangcheer97.github.io/tags/</loc>
-  </url><url>
-    <loc>https://wangcheer97.github.io/videos/</loc>
   </url><url>
     <loc>https://wangcheer97.github.io/</loc>
   </url>

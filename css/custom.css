@@ -1,11 +1,31 @@
 /*---------------------------------------------------------------------- */
 
-/* @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:600&display=swap'); */
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Francois+One&display=swap');
+:root {
+  --wz-color1: #1a45c8;
+  --wz-color6: #002FA7;
+}
 
 body {
-    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px !important;
+    line-height: 1.6;
+}
+
+p, li, td, th {
+    font-size: 15px !important;
+    font-family: 'Lato', sans-serif !important;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1800px;
+    }
+}
+
+.navbar-brand span {
+    font-size: 30px !important;
 }
 
 html { scroll-behavior: smooth; }
@@ -72,17 +92,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     animation: gradientBG 120s linear infinite;
     padding: 0px 0;
     margin-bottom: 140px;
-}
-
-/*------------------------------------------- */
-/* https://codepen.io/deathfang/pen/WxNVoq */
-canvas {
-    /* border: 3px solid red; */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
 }
 
 /*------------------------------------------- */
@@ -190,6 +199,14 @@ p.institution {
     letter-spacing: 0em;
 }
 
+.navbar ul.nav > li > a:hover,
+.navbar ul.nav > li > a:focus,
+.navbar ul.nav > li.active > a,
+.navbar ul.nav > li.active > a:hover {
+    background-color: rgba(0, 47, 167, 0.15) !important;
+    color: inherit;
+}
+
 .nav-tabs {
     border-bottom: 1px solid #DDD;
 }
@@ -273,6 +290,18 @@ li > ul, li > ol {
 
 /*---------------------------------------------------------------------- */
 
+ol.upcomings {
+    padding-left: 1.5em;
+    margin-left: 0;
+}
+
+ol.pub-list > li {
+    padding-left: 3.2em;
+    text-indent: -3.2em;
+}
+
+/*---------------------------------------------------------------------- */
+
 .btn {
     padding: 1px 5px;
 }
@@ -280,15 +309,15 @@ li > ul, li > ol {
 .btn-primary:hover,
 .btn-primary.focus,
 .btn-primary:focus {
-    color: white;
-    background-color: var(--wz-color1);
-    border-color: #fff;
+    color: #fff !important;
+    background-color: #1a45c8 !important;
+    border-color: #1a45c8 !important;
 }
 
 .btn-primary {
-    color: #fff;
-    background-color: var(--wz-color6);
-    border-color: #fff;
+    color: #fff !important;
+    background-color: #002FA7 !important;
+    border-color: #002FA7 !important;
     font-size: 80%;
 }
 
