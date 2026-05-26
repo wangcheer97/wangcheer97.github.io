@@ -43,11 +43,13 @@ body {
     font-family: 'Lato', sans-serif !important;
     font-size: 15px !important;
     line-height: 1.6;
+    color: #333333 !important;
 }
 
 p, li, td, th {
     font-size: 15px !important;
     font-family: 'Lato', sans-serif !important;
+    color: #333333 !important;
 }
 
 @media (min-width: 1200px) {
