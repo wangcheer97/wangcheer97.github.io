@@ -58,6 +58,7 @@ p, li, td, th {
 
 .navbar-brand span {
     font-size: 30px !important;
+    color: #333333 !important;
 }
 
 html { scroll-behavior: smooth; }
@@ -79,7 +80,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: 'Francois One', sans-serif !important;
     font-weight: 100;
     line-height: 1.1;
-    color: var(--wz-color6);
+    color: #333333;
 }
 
 #heading-breadcrumbs h1 {
@@ -229,6 +230,7 @@ p.institution {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0em;
+    color: #333333 !important;
 }
 
 .navbar ul.nav > li > a:hover,
@@ -314,6 +316,15 @@ div.image + h3 {
 
 div.social {
     margin-bottom: 0em;
+}
+
+div.social a {
+    color: #002FA7 !important;
+}
+
+div.social a:hover {
+    color: #1a45c8 !important;
+    opacity: 0.85 !important;
 }
 
 li > ul, li > ol {
