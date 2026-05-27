@@ -63,7 +63,7 @@ p, li, td, th {
     color: #333333 !important;
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: auto; }
 
 div#refs div p {
     text-indent: -1.25em !important;
