@@ -43,13 +43,13 @@ body {
     font-family: 'Lato', sans-serif !important;
     font-size: 15px !important;
     line-height: 1.6;
-    color: #333333 !important;
+    color: #000 !important;
 }
 
 p, li, td, th {
     font-size: 15px !important;
     font-family: 'Lato', sans-serif !important;
-    color: #333333 !important;
+    color: #000 !important;
 }
 
 @media (min-width: 1200px) {
@@ -60,7 +60,7 @@ p, li, td, th {
 
 .navbar-brand span {
     font-size: 30px !important;
-    color: #333333 !important;
+    color: #000 !important;
 }
 
 html { scroll-behavior: auto; }
@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: 'Francois One', sans-serif !important;
     font-weight: 100;
     line-height: 1.1;
-    color: #333333;
+    color: #000;
 }
 
 #heading-breadcrumbs h1 {
@@ -232,7 +232,7 @@ p.institution {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0em;
-    color: #333333 !important;
+    color: #000 !important;
 }
 
 .navbar ul.nav > li > a:hover,
@@ -378,3 +378,281 @@ ol.pub-list > li {
 }
 
 /*---------------------------------------------------------------------- */
+
+/* Scrollable recent news panel. */
+.news-box {
+    max-height: var(--news-height, 32em);
+    overflow-y: scroll;
+    scrollbar-gutter: stable;
+    border: 1px solid #e1e5eb;
+    border-radius: 10px;
+    background: #fafbfc;
+    padding: 8px 16px;
+    scrollbar-width: thin;
+    scrollbar-color: #9aa8bd #eef1f5;
+}
+.news-box:focus-visible {
+    outline: 2px solid #002fa7;
+    outline-offset: 3px;
+}
+.news-box::-webkit-scrollbar { width: 8px; }
+.news-box::-webkit-scrollbar-track { background: #eef1f5; border-radius: 8px; }
+.news-box::-webkit-scrollbar-thumb { background: #9aa8bd; border-radius: 8px; }
+.news-box .news-list { margin-top: 0; margin-bottom: 0; }
+.news-list > li { padding: 10px 0; border-bottom: 1px solid #e7ebf0; }
+.news-list > li:last-child { border-bottom: 0; }
+.news-list > li > .fa-li { top: 13px; color: #002fa7; }
+@media (max-width: 767px) {
+    .news-box { padding-left: 10px; padding-right: 10px; }
+    .news-box .course { padding-left: 0 !important; text-indent: 0 !important; }
+}
+
+/* Keep homepage section typography consistent. */
+.home-section-heading { font-size: 24px; line-height: 1.1; }
+.education-section, .education-section td, .news-list .course {
+    font-size: 15px !important;
+    line-height: 1.6;
+}
+.visitor-record { margin-top: 24px; }
+
+/* Responsive site navigation and visitor map placement. */
+.nav-container { min-height: 62px; }
+.navbar-header { float: left; }
+.navbar-brand.home { height: 62px; padding: 16px 15px; }
+.navbar-brand.home span { font-family: 'Francois One', sans-serif; font-size: 30px; font-weight: 100; }
+#main-navigation { float: right; }
+.visitor-record { width: 185px; margin: 24px auto 0; }
+@media (max-width: 767px) {
+    .nav-container { display: block; min-height: 50px; }
+    .navbar-header { float: none; }
+    .navbar-brand.home { height: 50px; padding: 10px 15px; }
+    .navbar-brand.home span { font-size: 25px; }
+    #main-navigation { float: none; border-top: 1px solid #e7e7e7; }
+    #main-navigation .navbar-nav { margin: 7px -15px; }
+    #main-navigation .navbar-nav > li > a { padding: 10px 15px; }
+    .visitor-record { display: none; }
+}
+
+.education-entry { display: flex; align-items: center; gap: 16px; margin: 0 0 20px; }
+.education-logo { width: 76px; height: 76px; object-fit: contain; flex: 0 0 76px; }
+.education-details { min-width: 0; }
+.education-details > strong { display: block; margin-bottom: 4px; }
+.education-degree { display: flex; flex-wrap: wrap; column-gap: 12px; }
+.education-location { display: block; color: #000; }
+.news-list > li { padding-top: 4px; padding-bottom: 4px; }
+.news-list .course { margin-bottom: 0 !important; line-height: 1.35 !important; }
+@media (max-width: 767px) {
+    .education-entry { align-items: flex-start; gap: 10px; margin-bottom: 16px; }
+    .education-logo { width: 56px; height: 56px; flex-basis: 56px; }
+    .education-degree { display: block; }
+}
+
+/* Match news spacing to regular body copy, without divider rules. */
+.news-list > li { padding-top: 0; padding-bottom: 0; border-bottom: 0; }
+.news-list .course { line-height: 1.6 !important; margin-bottom: 0 !important; }
+
+.news-list > li.news-item { display: flex; align-items: flex-start; gap: 10px; padding: 0; }
+.news-list .news-icon { position: static; flex: 0 0 18px; margin: 0; line-height: 1.6; color: #002fa7; }
+.news-list .news-text { flex: 1; min-width: 0; margin: 0 !important; padding: 0 !important; text-indent: 0 !important; line-height: 1.6 !important; }
+
+/* Tighten the news icon inset and education row spacing. */
+.news-box .news-list.fa-ul { margin-left: 0; padding-left: 0; }
+.news-list > li.news-item { gap: 4px; }
+.news-list .news-icon { flex-basis: 16px; }
+
+.news-list .news-text { display: grid; grid-template-columns: 5.4em minmax(0, 1fr); column-gap: 10px; }
+.news-list .news-date { color: #000; font-size: 0.92em; white-space: nowrap; font-variant-numeric: tabular-nums; }
+@media (max-width: 420px) {
+    .news-list .news-text { grid-template-columns: 4.8em minmax(0, 1fr); column-gap: 6px; }
+}
+
+.news-list .news-text { display: grid; grid-template-columns: 5.4em minmax(0, 1fr); column-gap: 10px; align-items: start; }
+.news-list .news-description { min-width: 0; }
+@media (max-width: 420px) {
+    .news-list .news-text { grid-template-columns: 4.8em minmax(0, 1fr); column-gap: 6px; }
+}
+
+.education-details > .education-location { margin: -2px 0 3px; font-size: 0.92em; }
+.news-list .news-date { display: block; width: 5.6em; }
+.news-list .news-text { grid-template-columns: 5.6em minmax(0, 1fr); column-gap: 10px; }
+@media (max-width: 420px) {
+    .news-list .news-text { grid-template-columns: 5.6em minmax(0, 1fr); column-gap: 6px; }
+}
+
+.education-school-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 10px; }
+.education-school-line > strong { display: inline; margin: 0; }
+.education-school-line .education-location { display: inline; margin: 0; font-size: 0.88em; color: #000; }
+
+.education-school-line .education-location { font-size: inherit; color: inherit; }
+.news-list .news-text { grid-template-columns: 4.5em minmax(0, 1fr); column-gap: 8px; }
+.news-list .news-date, .dated-item .news-date { display: grid; grid-template-columns: 2.2em 2.3em; width: 4.5em; white-space: nowrap; }
+.news-list .news-year, .dated-item .news-year { text-align: right; font-variant-numeric: tabular-nums; }
+.news-list .news-description { white-space: nowrap; }
+@media (max-width: 767px) {
+    .news-list .news-text { grid-template-columns: 4.5em minmax(0, 1fr); column-gap: 6px; }
+    .news-list .news-description { white-space: normal; }
+}
+
+/* Align the bio with the top of the profile photo and center the profile name. */
+.home-main { margin-top: 2%; }
+.sidebar-name { text-align: center; margin-top: 0.25em; }
+.sidebar-email { display: inline-block; margin-top: 2px; }
+
+/* Center the site title above the profile column. */
+@media (min-width: 768px) {
+    .nav-container { position: relative; }
+    .nav-container > .navbar-header { width: 33.3333%; text-align: center; }
+    .nav-container > .navbar-header .navbar-brand.home { float: none; display: inline-block; }
+}
+@media (max-width: 767px) {
+    .nav-container { position: relative; }
+    .nav-container > .navbar-header { text-align: center; }
+    .nav-container > .navbar-header .navbar-brand.home { float: none; display: inline-block; }
+    .nav-container > .navbar-header .navbar-toggle { position: absolute; right: 0; top: 0; margin-right: 15px; }
+}
+
+/* Keep profile and homepage section spacing even across the two columns. */
+.name-picture { margin-bottom: 12px; }
+.name-picture img { display: block; margin: 0 auto; }
+.sidebar-profile { margin-top: 18px; line-height: 1.6; }
+.sidebar-email { margin-top: 2px; }
+.sidebar-email, .sidebar-email:hover, .sidebar-email:focus { color: #000 !important; }
+.visitor-record { margin-top: 28px; }
+@media (min-width: 768px) {
+    .home-main { margin-top: 2%; }
+}
+@media (max-width: 767px) {
+    .sidebar-profile { margin-top: 14px; }
+    .visitor-record { margin-top: 22px; }
+}
+
+/* Use the same vertical rhythm between each sidebar block. */
+.name-picture { margin-bottom: 16px; }
+.sidebar-profile { margin-top: 0; }
+.sidebar-profile + .social { margin: 16px auto 0; }
+.sidebar-profile + .social {
+    grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+    justify-content: center;
+    width: 185px !important;
+    max-width: 100%;
+    column-gap: 0;
+}
+.sidebar-profile + .social > a {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+/* The theme adds `a i.fa { margin: 0 5px }`, which widens only the Font Awesome cells; give every icon the same box. */
+.sidebar-profile + .social > a > i { margin: 0; font-size: 27px; width: 1em; line-height: 1; text-align: center; }
+.sidebar-profile + .social + .visitor-record { margin: 16px auto 0; }
+
+/* Align CV citations with section headings; keep year and sequence number distinct. */
+ol.cv-list { list-style: none !important; margin: 0 !important; padding: 0 !important; }
+ol.cv-list > li { display: grid; grid-template-columns: 2.7em 1em minmax(0, 1fr); column-gap: 0.12em; align-items: start; padding: 0 !important; text-indent: 0 !important; margin-bottom: 0.65em; }
+.cv-list .pub-year, .cv-list .pub-number { display: block; margin: 0; white-space: nowrap; }
+.cv-list .pub-number { text-align: right; }
+.cv-list .pub-citation { min-width: 0; padding-left: 0.35em; }
+/* Links in citations read as plain text; DOIs continue on the same line, breaking inside the URL when needed. */
+.cv-list a { color: inherit !important; }
+.cv-list a.pub-doi { word-break: break-all; }
+
+/* CV-style awards: year, award, and granting organization. */
+.award-list { width: 100%; counter-reset: award-number 21; }
+.award-item {
+    display: grid;
+    grid-template-columns: 1.8em 3.2em max-content minmax(0, 1fr);
+    column-gap: 0.55em;
+    align-items: baseline;
+    margin-bottom: 0.35em;
+    counter-increment: award-number -1;
+}
+.award-item::before { content: counter(award-number) "."; text-align: right; }
+.award-year { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.award-name { color: #002FA7; }
+.award-name::after { content: ","; color: #000; }
+.award-organization { min-width: 0; }
+@media (max-width: 767px) {
+    .award-item {
+        grid-template-columns: 1.8em 3.2em minmax(0, 1fr);
+        column-gap: 0.45em;
+        margin-bottom: 0.8em;
+    }
+    .award-organization { grid-column: 3; }
+}
+
+/* CV-style numbered lists on the Activities page. */
+.numbered-list { margin-bottom: 1em; counter-reset: numbered-item; }
+.numbered-item {
+    display: grid;
+    grid-template-columns: 1.2em minmax(0, 1fr);
+    column-gap: 0.55em;
+    align-items: baseline;
+    margin-bottom: 0.35em;
+    counter-increment: numbered-item;
+}
+.numbered-item::before { content: counter(numbered-item) "."; text-align: right; }
+.numbered-item.dated-item { grid-template-columns: 1.2em 4.5em minmax(0, 1fr); }
+.service-years { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.service-role { color: #002FA7; }
+.service-detail { grid-column: 3 / -1; }
+/* Rows share the list's columns so roles and skill labels line up from row to row. */
+.service-list, .skill-list { display: grid; column-gap: 0.55em; }
+.service-list { grid-template-columns: 1.2em max-content max-content minmax(0, 1fr); }
+.skill-list { grid-template-columns: 1.2em max-content minmax(0, 1fr); }
+.service-list > .numbered-item, .skill-list > .numbered-item { grid-column: 1 / -1; grid-template-columns: subgrid; }
+@media (max-width: 767px) {
+    .service-list { grid-template-columns: 1.2em max-content minmax(0, 1fr); }
+    .service-list > .numbered-item > :not(.service-years):not(.service-role) { grid-column: 3; }
+    .skill-list { grid-template-columns: 1.2em minmax(0, 1fr); }
+    .skill-list > .numbered-item > :last-child { grid-column: 2; }
+    .service-list > .numbered-item, .skill-list > .numbered-item { margin-bottom: 0.8em; }
+}
+
+/* Side table of contents on the inner pages: a vertical rail with one dot per section. */
+.page-toc-column { margin-top: 2%; }
+.page-toc { display: block; }
+.page-toc[hidden] { display: none; }
+/* Labels start where the site title starts so the rail sits at the same place on every page. */
+.page-toc-list { position: relative; list-style: none; margin: 0 0 0 calc(50% - 82px); padding: 0 0 0 22px; }
+.page-toc-list::before { content: ""; position: absolute; left: 5px; top: 17px; bottom: 18px; width: 2px; background: #dfe3ea; }
+.page-toc-list li { position: relative; margin: 0; padding: 7px 0; line-height: 1.4; }
+.page-toc-list li::before { content: ""; position: absolute; left: -21px; top: 12px; width: 10px; height: 10px; border: 2px solid #b8c0cc; border-radius: 50%; background: #fff; transition: border-color 0.2s, background-color 0.2s; }
+.page-toc-list li.toc-minor::before { left: -20px; top: 13px; width: 8px; height: 8px; }
+.page-toc-list a { color: #000 !important; font-size: 15px; text-decoration: none !important; transition: color 0.2s; }
+.page-toc-list li.toc-major > a { color: #000 !important; font-weight: 700; }
+.page-toc-list a:hover, .page-toc-list a.active { color: #002FA7 !important; }
+.page-toc-list li:has(> a.active)::before, .page-toc-list li:hover::before { border-color: #002FA7; background: #002FA7; }
+.page-content h2, .page-content h3, .page-content [data-toc] { scroll-margin-top: 90px; }
+@media (min-width: 992px) {
+    .wide-content-layout { display: flex; }
+    .page-toc { position: sticky; top: 90px; }
+}
+@media (max-width: 991px) {
+    .page-toc-column { display: none; }
+}
+
+/* Site-wide vertical rhythm: one heading scale, list rows at body line spacing, one gap between logo entries. */
+.page-content h2, .home-main h2 { font-size: 30px; margin: 36px 0 14px; }
+.page-content h3, .home-main h3 { font-size: 24px; margin: 28px 0 12px; }
+.page-content > h2:first-child { margin-top: 20px; }
+.page-content h2 + h3 { margin-top: 0; }
+.home-main > p:last-of-type { margin-bottom: 0; }
+.award-list, .numbered-list, .news-box .news-list { margin-bottom: 0; }
+/* List rows sit at the body line spacing; stacked mobile rows below get a small gap so entries stay distinct. */
+.award-item, .numbered-item, ol.cv-list > li, .news-list > li.news-item { margin-bottom: 0; }
+.education-entry, .featured-publication { margin-bottom: 16px; }
+.education-entry:last-child { margin-bottom: 0; }
+.education-details > strong { margin-bottom: 0; }
+.featured-publication { padding-bottom: 16px; border-bottom: 1px solid #eee; }
+.news-list .news-date { font-size: inherit; }
+@media (max-width: 767px) {
+    .award-item, .service-list > .numbered-item, .skill-list > .numbered-item { margin-bottom: 8px; }
+    .education-entry { margin-bottom: 16px; }
+}
+
+/* CV page: download/open buttons above an embedded PDF viewer. */
+.cv-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 12px; }
+.cv-actions .btn { font-size: 14px; padding: 4px 12px; }
+.cv-actions .btn i.fa { margin: 0 4px 0 0; }
+.cv-frame { display: block; width: 100%; height: calc(100vh - 170px); min-height: 600px; border: 1px solid #e1e5eb; border-radius: 4px; }
